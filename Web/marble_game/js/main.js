@@ -9,6 +9,8 @@ function init()
 
 function addListeners()
 {	
+    var path = 'http://birdleymedia.com/portfolio/Web/marble_game/'
+	
 	var hiScores = document.getElementById('main_scores');
 		
 	scoreButton(hiScores);
@@ -19,14 +21,14 @@ function addListeners()
 
 	newGame.addEventListener('touchstart', function (event)
 	{
-		window.location.href = 'http://birdleymedia.com/e76/game.html';
+		window.location.href = path + 'game.html';
 	});
 	
 	// listener for scores
 	
 	hiScores.addEventListener('touchstart', function (event)
 	{
-		window.location.href = 'http://birdleymedia.com/e76/scores.html';
+		window.location.href = path + 'scores.html';
 	});
 	// listener for quit
 	
@@ -39,14 +41,14 @@ function addListeners()
 	
 	newGame.addEventListener('mousedown', function (event)
 	{
-		window.location.href = 'http://birdleymedia.com/e76/game.html';
+		window.location.href = path + 'game.html';
 	});
 	
 	// listener for scores
 	
 	hiScores.addEventListener('mousedown', function (event)
 	{
-		window.location.href = 'http://birdleymedia.com/e76/scores.html';
+		window.location.href = path + 'scores.html';
 	});
 	
 	// listener for quit

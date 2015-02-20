@@ -29,14 +29,14 @@ function addListeners()
 	
 	newGame.addEventListener('touchstart', function (event)
 	{
-		window.location.href = 'http://birdleymedia.com/e76/game.html';
+		window.location.href = 'http://birdleymedia.com/portfolio/Web/marble_game/game.html';
 	});
 	
 	// listener for scores
 	
 	menu.addEventListener('touchstart', function (event)
 	{
-		window.location.href = 'http://birdleymedia.com/e76/main.html';
+		window.location.href = 'http://birdleymedia.com/portfolio/Web/marble_game/main.html';
 	});
 	
 	
@@ -52,14 +52,14 @@ function addListeners()
 	
 		newGame.addEventListener('mousedown', function (event)
 	{
-		window.location.href = 'http://birdleymedia.com/e76/game.html';
+		window.location.href = 'http://birdleymedia.com/portfolio/Web/marble_game/game.html';
 	});
 	
 	// listener for scores
 	
 	menu.addEventListener('mousedown', function (event)
 	{
-		window.location.href = 'http://birdleymedia.com/e76/main.html';
+		window.location.href = 'http://birdleymedia.com/portfolio/Web/marble_game/main.html';
 	});
 	
 	
