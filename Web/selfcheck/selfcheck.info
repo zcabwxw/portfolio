@@ -1,0 +1,4 @@
+name = Self Check
+core = 7.x
+description = Integration for Javascript Self Checks.
+package = training

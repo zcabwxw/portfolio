@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<applet_data>
+    <title>SELF-CHECK</title>
+      <intro>Match each work of art with its description by dragging it into the correct box.</intro>
+  <applet0 NAME="Crystal Bridges">
+    <items>
+      <item>
+	     <caption>SoundSuit</caption>
+		 <image>quiz1/SoundSuit.jpg</image>
+	 </item>
+	  
+      <item>
+	     <caption>Our Town</caption>
+		 <image>quiz1/Our-Town.jpg</image>
+	 </item>
+	  
+      <item>
+	     <caption>Rosie the Riveter</caption>
+		 <image>quiz1/rosie-riveter.jpg</image>
+      </item>
+	  
+	  <item>
+	     <caption>Supine Woman</caption>
+		 <image>quiz1/Supine-Woman.jpg</image>
+
+      </item>
+	
+	  
+    </items>
+    <cols>
+	  <col>Depicts a cultural icon of the U.S., representing feminism and economic power.</col>
+     
+      <col>Conveys both optimism and imperfection, and contains symbols of soldiers at war.</col>
+	  
+	   <col>Created in reaction to the discrimination exemplified in the Rodney King incident. </col>
+	
+	  <col>Portrays a fashionable and modern yet psychologically ambiguous figure.</col>
+    </cols>
+    <answer>2103</answer>
+  </applet0>
+  
+ 
+   <applet1 NAME="Crystal Bridges">
+    <!-- content is below. -->
+    <items>
+      <item>
+	     <caption>Hammer and Sickle</caption>
+		 <image>quiz2/Sickle.jpg</image>
+	 </item>
+      <item>
+	     <caption>The Ward</caption>
+		 <image>quiz2/Ward.jpg</image>
+	 </item>
+      <item>
+	     <caption>Untitled</caption>
+		 <image>quiz2/Untitled.jpg</image>
+      </item>  
+	  <item>
+	     <caption>Sacrifice</caption>
+		 <image>quiz2/Sacrifice.jpg</image>
+      </item>
+    </items>
+    <cols>
+	  <col>A depiction of abstracted, dislocated human figures, potentially reflecting the struggles of segregation.</col>
+     
+	   <col>Symbolizes the community that developed at a Japanese internment camp in Arkansas.</col>
+	   
+      <col>Depicts a somber institution and potentially offers harsh commentary on the Vietnam war.</col>
+	  
+	   <col>Portrays a detailed version of a Soviet Symbol, which the artist insisted was not politically motivated. </col>
+	
+	
+    </cols>
+    <answer>3210</answer>
+  </applet1>
+  
+     <applet2 NAME="Crystal Bridges">
+
+    <items>
+	    <item>
+	     <caption>Antarctica</caption>
+		 <image>quiz3/antarctica.jpg</image>
+	 </item>
+      <item>
+	     <caption>The Island</caption>
+		 <image>quiz3/island.jpg</image>
+	 </item>
+      <item>
+	     <caption>Untitled</caption>
+		 <image>quiz3/untitled.jpg</image>
+      </item>
+	  
+	  <item>
+	     <caption>Zag Wall</caption>
+		 <image>quiz3/zag.jpg</image>
+
+      </item>
+	
+	  
+    </items>
+    <cols>
+	  <col>An abstract painting with bold and energetic brush strokes, created to evoke emotion.</col>
+     
+	 <col>A photorealistic painting that employs a wide-angle format and high contrast between near and far.</col>
+	 
+     <col>Represents the doom of a species and the effect of human expansion on the violent natural world.</col>
+	 
+	  <col>Conveys a sense of mystery and ritual, and reflects the artist's understanding of visual rhythm.</col>
+    </cols>
+    <answer>2013</answer>
+  </applet2>
+
+ 
+  <!-- unit 2 -->
+  
+     <applet3 NAME="Crystal Bridges">
+    <!-- content is below. -->
+
+
+    <items>
+	    <item>
+	     <caption>The Reader</caption>
+		 <image>quiz4/Cassatt.jpg</image>
+	 </item>
+	 
+	  <item>
+	     <caption>Prof. B.H. Rand</caption>
+		 <image>quiz4/rand.jpg</image>
+	 </item>
+      <item>
+	     <caption>Jessica Penn</caption>
+		 <image>quiz4/Jessica-Penn.jpg</image>
+      </item>
+	  
+  
+	  
+	  <item>
+	     <caption>The Embroideress</caption>
+		 <image>quiz4/embroideress.jpg</image>
+
+      </item>
+	
+	  
+    </items>
+    <cols>
+	  <col>A portrait with monochromatic color schemes created in the first decade of the 20th century.</col>
+     
+	 <col>Though primarily dark in composition, the expert use of color in this piece guides the eye of the viewer.</col>
+	 
+     <col>An impressionist piece that reflects the artists' interest in painting middle-class women.</col>
+	 
+	  <col>This piece depicts a prominent local professional graced with both intellect and feeling.</col>
+    </cols>
+    <answer>2301</answer>
+  </applet3>
+  
+  <!-- unit 2 -->
+  
+     <applet4 NAME="Crystal Bridges">
+    <!-- content is below. -->
+    <items>
+	    <item>
+	     <caption>The Indian and the Lily</caption>
+		 <image>quiz5/indian-lily.jpg</image>
+	 </item>
+      <item>
+	     <caption>Return of the Useless</caption>
+		 <image>quiz5/useless.jpg</image>
+	 </item>
+      <item>
+	     <caption>Free</caption>
+		 <image>quiz5/free.jpg</image>
+      </item>
+	  
+	  <item>
+	     <caption>Cross of Gold</caption>
+		 <image>quiz5/cross-of-gold.jpg</image>
+
+      </item>
+	
+	  
+    </items>
+    <cols>
+
+     
+	 <col>From the artist's War Series of 1918, this piece depicts horrifying human suffering.</col>
+	 
+     <col>A basswood carving that symbolizes the life of African-Americans living in post Civil War America.</col>
+	 
+	 <col>This piece symbolizes the rhetoric of a speech in 1896 against hard money policies of East Coast Banks.</col>
+	  
+	 <col>Depicts a rich natural setting and portrays its subject as a refined, aesthetically conscious individual.</col>
+    </cols>
+    <answer>1230</answer>
+  </applet4>
+  
+       <applet5 NAME="Crystal Bridges">
+ 
+    <items>
+	    <item>
+	     <caption>Hall of the Mountain King</caption>
+		 <image>quiz6/mountain-king.jpg</image>
+	 </item>
+      <item>
+	     <caption>After the Flood</caption>
+		 <image>quiz6/flood.jpg</image>
+	 </item>
+      <item>
+	     <caption>World's Columbian Exposition</caption>
+		 <image>quiz6/exposition.jpg</image>
+      </item>
+	  
+	  <item>
+	     <caption>Bleecker Street, Saturday Night</caption>
+		 <image>quiz6/bleecker.jpg</image>
+      </item>
+    </items>
+    <cols>
+	
+     <col>This piece emphasizes the features of the surroundings, illuminated by natural and artifical light.</col>
+	 
+	 
+	 
+     <col>A landmark piece of American impressionism that was created based on a published photograph.</col>
+	 
+	    <col>Reminiscent of a tapestry, this piece expresses the sensory experience of the wilderness.</col>
+		
+		<col>While color and setting create a sombre atmosphere, the subjects express a sense of hope.</col>
+    </cols>
+    <answer>3201</answer>
+  </applet5>
+  
+  <applet6 NAME="Crystal Bridges">
+    <!-- content is below. -->
+    <items>
+	    <item>
+	     <caption>Ottoe Half Chief</caption>
+		 <image>quiz7/chief.jpg</image>
+	 </item>
+      <item>
+	     <caption>Mrs. Jacob Franks</caption>
+		 <image>quiz7/mrs-franks.jpg</image>
+	 </item>
+      <item>
+	     <caption>War News from Mexico</caption>
+		 <image>quiz7/war-news.jpg</image>
+      </item>
+	  
+	  <item>
+	     <caption>Union Refugees</caption>
+		 <image>quiz7/refugees.jpg</image>
+
+      </item>
+	
+	  
+    </items>
+    <cols>
+	  <col>Portrays the reaction of the Americans to mass media while highlighting the social hierarchy of the time.</col>
+     
+	 <col>A likeness of a prominent figure who was present at treaty negotiations in D.C. during the 19th century.</col>
+	 
+     <col>One painting from the only large set of early colonial portraits that exists today in its entirety.</col>
+	 
+	  <col>Most individuals in this painting are tired and fearful, suffering from the impact of the Civil War.</col>
+    </cols>
+    <answer>2013</answer>
+  </applet6>
+  
+</applet_data>

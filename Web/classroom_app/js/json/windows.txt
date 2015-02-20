@@ -1,0 +1,97 @@
+// JavaScript Document
+
+{"filename":"vert_window2.png",
+	"label":"Mid",
+	"x":60,
+	"y":4,
+	"z":2,
+	"width":24,
+	"height":111,
+	
+	"width2":0,
+	"height2":0,
+	"large":false
+	
+	},
+	
+	{"filename":"vert_window3.png",
+	"label":"Bottom",
+	"x":100,
+	"y":460,
+	"z":2,
+	"width" :24,
+	"height":104,
+	
+	"width2":0,
+	"height2":0,
+	"large":false
+	
+	}, 
+	
+	{"filename":"vert_window4.png",
+	"label":"Bottom",
+	"x":100,
+	"y":500,
+	"z":2,
+	"width" :24,
+	"height":104,
+	"width2":0,
+	"height2":0,
+	"large":false
+	
+	},
+	
+
+	
+	{"filename":"horiz_window1.png",
+	"label":"Window",
+	"x":180,
+	"y":300,
+	"z":2,
+	"width" :107,
+	"height":24,
+	"width2":0,
+	"height2":0,
+	"large":false
+	
+	},
+	
+	{"filename":"horiz_window2.png",
+	"label":"Window",
+	"x":180,
+	"y":350,
+	"z":2,
+	"width" :106,
+	"height":24,
+	
+	"width2":0,
+	"height2":0,
+	
+	"large":false
+	},
+	
+	{"filename":"horiz_window3.png",
+	"label":"Window",
+	"x":300,
+	"y":300,
+	"z":2,
+	"width" :106,
+	"height":24,
+	"width2":0,
+	"height2":0,
+	"large":false
+	
+	},
+	
+	{"filename":"horiz_window4.png",
+	"label":"Window",
+	"x":300,
+	"y":350,
+	"z":2,
+	"width" :107,
+	"height":24,
+	"width2":0,
+	"height2":0,
+	"large":false
+	
+	}

@@ -1,0 +1,343 @@
+{
+	"furniture" : [
+	
+	{"filename":"chair.png",
+	"label":"Chair",
+	"x":55,
+	"y":290,
+	"z":1,
+	"large":false,
+	
+	"width":40,
+	"height":39,
+	
+	"width2":0,
+	"height2":0
+
+	},
+	 
+	{"filename":"roundtable_grey.png",
+	"label":"Grey round table",
+	"x":55,
+	"y":220,
+	"z":2,
+	"large": true,
+	
+	"height":50,
+	"width":48,
+	
+	"width2" :110,
+	"height2":100
+	
+	},
+
+	{"filename":"roundtable_wood.png",
+	"label":"Wooden round table",
+	"x":55,
+	"y":610,
+	"z":2,
+	"large":true,
+	
+	"width":51,
+	"height":48,
+	
+	"width2" :110,
+	"height2":100
+
+	},
+	
+	{"filename":"desk.png",
+	"label":"Student Desk",
+	"x":55,
+	"y":360,
+	"z":2,
+	"large":false,
+	
+	"width" :49,
+	"height":49,
+	
+	"width2":0,
+	"height2":0
+
+	},
+	
+	{"filename":"blacktable_horiz.png",
+	"label":"Lab Table",
+	"x":55,
+	"y":435,
+	"z":2,
+	"large":true,
+	
+	"width":48,
+	"height":21,
+	
+	"width2" :138,
+	"height2":61
+
+	},
+	
+	{"filename":"browntable_horiz.png",
+	"label":"Group Work Table",
+	"x":55,
+	"y":485,
+	"z":2,
+	"large":true,
+	
+	"width":48,
+	"height":20,
+	
+	"width2" :138,
+	"height2":61
+
+	}, 
+	
+		{"filename":"teacher_desk.png",
+	"label":"Teacher's Desk",
+	"x":55,
+	"y":545,
+	"z":2,
+	"large":true,
+	
+	"width":49,
+	"height":25,
+	
+	"width2" :138,
+	"height2":71
+	
+
+	}
+
+	], 
+	
+	"windows" : [
+	
+	{"filename":"smartboard.png",
+	"label":"Smartboard",
+	"x":55 ,
+	"y":200 ,
+	"z":2,
+	"large":true,
+	
+	"width":48,
+	"height":32,
+	
+	"width2":209,
+	"height2":46
+
+	}, 
+	
+	{"filename":"whiteboard.png",
+	"label":"Whiteboard",
+	"x":55,
+	"y":260,
+	"z":2,
+	"large":true,
+	
+	"width":48,
+	"height":30,
+	
+	"width2":339,
+	"height2":50
+
+	},
+	
+	{"filename":"blackboard.png",
+	"label":"Blackboard",
+	"x":55,
+	"y":320,
+	"z":2,
+	"large":true,
+	
+	"width":48,
+	"height":30,
+	
+	"width2":339,
+	"height2":49
+	
+
+	},
+	
+	{"filename":"door.png",
+	"label":"Door",
+	"x":55,
+	"y":380,
+	"z":2,
+	"large":false,
+	
+	"width":39,
+	"height":66,
+	
+	"width2":0,
+	"height2":0
+	
+	},
+	
+	
+	{"filename":"horiz_window1.png",
+	"label":"Window",
+	"x":55,
+	"y":450,
+	"z":2,
+	"width2" :107,
+	"height2":24,
+	"width":48,
+	"height":11,
+	"large":true
+	
+	},
+	
+	{"filename":"horiz_window2.png",
+	"label":"Window",
+	"x":55,
+	"y":500,
+	"z":2,
+	"width2" :106,
+	"height2":24,
+	
+	"width":48,
+	"height":11,
+	
+	"large":true
+	},
+	
+	{"filename":"horiz_window3.png",
+	"label":"Window",
+	"x":55,
+	"y":540,
+	"z":2,
+	"width2" :106,
+	"height2":24,
+	"width":48,
+	"height":11,
+	"large":true
+	
+	},
+	
+	{"filename":"horiz_window4.png",
+	"label":"Window",
+	"x":55,
+	"y":580,
+	"z":2,
+	"width2" :107,
+	"height2":24,
+	"width":49,
+	"height":11,
+	"large":true
+	
+	}
+	
+	
+
+	], 
+	
+	"tech" : [
+	
+	{"filename":"keyboard.png",
+	"label":"Keyboard",
+	"x":55,
+	"y":200,
+	"z":3,
+	"width" :53,
+	"height":13,
+	"width2":0,
+	"height2":0,
+	"large":false
+
+	},
+	
+	
+	
+	{"filename":"tv.png",
+	"label":"TV Monitor",
+	"x":55,
+	"y":250,
+	"z":3,
+	"width":55,
+	"height":46,
+	"width2":0,
+	"height2":0,
+	"large":false
+	
+	},
+	
+	{"filename":"infocus.png",
+	"label":"InFocus Machine",
+	"x":55,
+	"y":320,
+	"z":3,
+	"width" :34,
+	"height":51,
+	"width2":0,
+	"height2":0,
+	"large":false
+	
+	},
+	
+	{"filename":"computer.png",
+	"label":"Laptop",
+	"x":55,
+	"y":380,
+	"z":3,
+	"width":42,
+	"height":39,
+	"width2":0,
+	"height2":0,
+	"large":false
+	}, 
+	
+	{"filename":"tablet.png",
+	"label":"Tablet",
+	"x":55,
+	"y":440,
+	"z":3,
+	"width" :26,
+	"height":32,
+	"width2":0,
+	"height2":0,
+	"large":false
+
+	},
+	
+	{"filename":"transparency_projector.png",
+	"label":"Projector",
+	"x":55,
+	"y":500,
+	"z":3,
+	"width" :32,
+	"height":49,
+	"width2":0,
+	"height2":0,
+	"large":false
+
+	},
+	
+	{"filename":"outlet.png",
+	"label":"Electrical Outlet",
+	"x":55,
+	"y":560,
+	"z":3,
+	"width" :16,
+	"height":22,
+	"width2":0,
+	"height2":0,
+	"large":false
+
+	},
+	
+	{"filename":"ethernet.png",
+	"label":"Ethernet Port",
+	"x":55,
+	"y":600,
+	"z":3,
+	"width" :16,
+	"height":21,
+	"width2":0,
+	"height2":0,
+	"large":false
+
+	}
+	
+
+	]
+	
+}

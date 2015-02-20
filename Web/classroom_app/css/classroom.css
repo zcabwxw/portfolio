@@ -1,0 +1,509 @@
+/* CSS Document */
+
+body {
+	margin-top: 0px;
+	padding-top: 0px;
+	background-color:  #69F;
+	font-family: Calibri, Verdana;
+}
+
+#wrapper {
+	margin-top: 0px;
+	padding-top: 0px;
+	background-color: #e9e9e9;
+	width: 900px;
+	margin: 0px auto;
+	height: 840px;
+}
+
+#footer {
+	margin-top: 50px;
+	width: 900px;
+	background-color: #e9e9e9;
+	text-align: center;
+	padding: 20px 0px 15px 0px;
+	z-index: 1000;
+}
+#bubble {
+	margin: 20px;
+	border-top: 1px solid black;
+	padding-top: 30px;
+}
+#footer a {
+	color: #06C;
+	text-decoration: none;
+}
+#footer a:hover {
+	text-decoration: underline;
+}
+#myCanvas {
+	display: none;
+}
+
+#no_capture
+{
+	text-align: center;	
+}
+#url_prompt
+{
+	margin-bottom: 15px;
+}
+#disclaimer
+{
+	margin-top: 15px;
+	margin-left: 15px;
+	font-size: 17px;
+}
+#dialogs, #instructions, #no_capture
+{
+	visibility: hidden;
+}
+#no_capture a 
+{
+	color: #7d7dd3;
+	text-decoration: none;
+}
+#no_capture a:hover
+{
+	text-decoration: underline;
+}
+fieldset {
+	border: 1px solid grey;
+}
+ul.topnav, ul#map_sublist {
+	list-style-type: none;
+}
+
+ul.browsers {
+	margin-left: 160px;
+	text-align: left;
+	list-style: bullet;
+}
+/* top navigation list. */
+ul.topnav {
+	background-color: black;
+	display: block;
+	height: 1.8em;
+	margin-top: 0px;
+	padding-top: 0px;
+	padding-left: 10px;
+	list-style-type: none;
+	position: absolute;
+	width: 892px;
+	margin-bottom: 80px;
+	
+}
+
+
+/*arrow for map settings*/
+.arrow
+{
+	font-size: 0.55em;
+	vertical-align: 20%;
+}
+
+/* all list items within top navigation list. */
+ul.topnav > li {
+	padding-top: 3px;
+}
+/* all list links within top navigation list.*/
+ul.topnav > li a {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #CCC;
+	font-size: 1.2em;
+	margin: 0px 3px 3px 3px;
+	padding: 3px;
+	text-decoration: none;
+}
+
+
+/* for iPhones and other mobiles */
+
+/* all links that are a child of the topnav list */
+ul.topnav a:hover {
+	color: white;
+}
+
+ul.topnav > li#clear  a {
+	margin-left: 80px;
+	padding-left: 80px;
+}
+
+/* list item hover state */
+ul.topnav > li#maplist:hover {
+	background-color: white;
+	color: black; 
+	box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+	z-index: 4;
+	position: relative;
+}
+
+/* in normal state, dropdown is hidden */
+ul.topnav li#maplist ul {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+
+
+/* when hovering over the first item, turn the color black. */
+li:hover a#map {
+	color: black;
+}
+
+li#maplist a {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+ul#map_sublist li {
+	 padding-bottom: 3px;
+}
+ul#map_sublist li:first-child a {
+	margin-top: 5px;
+}
+ul.topnav li#maplist:hover {
+	background-color: white;
+	color: black;
+}
+
+ul.topnav li#maplist:hover ul {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	
+}
+ul#map_sublist {
+	background-color: white;
+	border: 0px 1px 1px 1px solid grey;
+	color: black;
+	
+
+}
+
+ul.topnav li#maplist ul {
+	padding-left: 0px;
+	display: block;
+	z-index: 1;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+
+}
+
+/* set the font and display settings for our dropdown link items. */
+ul.topnav li#maplist ul li a{
+	color: black;
+	display: block;
+	margin-bottom: 0px;
+
+
+}
+
+/* set top padding for list element*/
+ul.topnav li#maplist ul li {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+/* change background to grey when you hover over a dropdown item*/
+ul.topnav li#maplist ul li:hover {
+	color: black;
+	background: #ecf2ff;
+
+}
+
+ul.topnav#map li ul {
+	background: white;
+	color: black;
+	border: 0px 1px 1px 1px solid grey;
+	text-decoration: none;
+}
+
+ul.topnav li.left {
+	float: left;
+	padding-left: 10px;
+}
+
+ul.topnav li.left:first-child
+{
+	padding-left: 0px;
+	margin-left: 0px;
+}
+
+ul.topnav li.right {
+	float: right;
+	padding-right: 10px;
+}
+
+/*
+ *  header
+ */ 
+ 
+
+h1 {
+	
+
+	font-size: 1.5em;
+	text-align: center;
+	z-index: 0;
+	display: block;
+	margin: 0px auto;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+#top_info
+{
+	display: block;
+	width: 98%;
+	border: 1px solid #e9e9e9;
+	
+	
+}
+#inst_rel
+{
+	position: relative;
+}
+#container {
+	background-color: #e9e9e9;
+	width: 91%;
+	height: 600px;
+	
+	display: block;
+	margin: 0px auto;
+
+}
+#object_text {
+	width: 300px;
+}
+/*
+ * style for text entry dialog box
+ */
+#enter_text {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	height: 2em;
+	width: 200px;
+	padding-left: 10px;
+}
+
+/* text dialog */
+
+.left_field, .right_field
+{
+	float: left;
+}
+.right_field
+{
+	margin-left: 20px;
+}
+#properties
+{
+	width: 230px;
+}
+#presets
+{
+	width: 340px;;
+}
+
+
+
+/*
+ *  Instructions at top of screen
+ */
+#instructions {
+	font-family: Calibri, Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	position: absolute;
+	top: 20px;
+	left: 230px;
+	z-index: 5;
+	opacity: 0.75;
+	width: 440px;
+}
+.label {
+	margin-left: 5px;
+}
+.bgc {
+	margin-left: 43px;
+}
+/*
+ *  Settings buttons at bottom of screen
+ */ 
+.botnav {
+	width: 20%;
+}
+#settings {
+	position: fixed;
+	bottom: 0;
+	width: 98%;
+	text-align: center;
+	margin: 0px;
+}
+/*dimensions input field*/
+.dim_input {
+	width: 100px;
+	padding-left: 10px;
+}
+#roomWidth {
+	margin-bottom: 10px;
+}
+/* dialog button padding */
+.ui-dialog .ui-dialog-buttonpane {
+	padding-right: 8px;
+	padding-bottom: 8px;
+}
+/*
+ *  Text area in dialog boxes
+ */
+textarea:focus, input:focus !important {
+ background-color: #fff;
+ color: #fff;
+}
+#num_sides, #side_length, .ui-spinner-input !important {
+	background-color: #fff;
+
+	
+}
+.spinner_row
+{
+	margin-bottom: 20px;
+}
+
+#shape_type, #shape_colors
+{
+	width: 220px;
+}
+#shape_type
+{
+	margin-bottom: 20px;
+}
+/* help dialog box */
+
+#set_shape
+{
+	
+	width: 220px;
+	display: block;
+	overflow: hidden;
+	margin-right: 30px;
+}
+
+.button_icon {
+	width: 53px;
+	height: 53px;
+	display: block;
+	float: left;
+	
+}
+
+#enter_url {
+	margin-bottom: 0px;
+	
+}
+#shape_error, #image_feedback
+{
+	clear: both;
+	color: red;
+	padding-top: 5px;
+}
+#image_feedback
+{
+	padding-left: 15px;
+}
+
+#my_url
+{
+	width: 460px;
+}
+.help_section {
+	display: block;
+	min-height: 100px;
+	clear: both;
+}
+#shape_button {
+	background: url('../images/toolbar_buttons.png') -12px -6px no-repeat;
+}
+#eraser_button {
+	background: url('../images/toolbar_buttons.png') -12px -66px no-repeat;
+}
+#text_button {
+	background: url('../images/toolbar_buttons.png') -12px -125px no-repeat;
+}
+#rotate_button {
+	background: url('../images/toolbar_buttons.png') -12px -183px no-repeat;
+}
+#capture_button {
+	background: url('../images/toolbar_buttons.png') -12px -243px no-repeat;
+}
+#image_button {
+	background: url('../images/toolbar_buttons.png') -12px -302px no-repeat;
+}
+#grid_button {
+	background: url('../images/toolbar_buttons.png') -12px -361px no-repeat;
+}
+.button_box {
+	float: left;
+}
+.helptext {
+	float: left;
+	margin-left: 15px;
+	width: 95%;
+	margin-bottom: 25px;
+}
+.helptext_icon
+{
+	float: left;
+	margin-left: 15px;
+	width: 80%;
+	margin-bottom: 25px;
+}
+
+.sidelength, .numsides
+{
+	width: 40px;
+}
+#shape_properties
+{
+	width: 240px;
+	float: right;
+	margin-left: 0px;
+}
+#set_shape
+{
+	width: 260px;
+	margin-right: 0px;
+}
+/*bottom of screen icons*/
+
+@media only screen and (max-device-width: 480px)
+{
+	ul.topnav {
+		height: 2.5em;
+	}
+	ul.topnav > li a {
+		font-size: 1.8em;
+		font-weight: bold;
+	}
+	#instructions
+	{
+		font-size: 13px;
+	}
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+{
+	#instructions
+	{
+		font-size: 13px;
+	}
+	
+}
+
+#filename_prompt {
+	margin-bottom: 10px;
+}

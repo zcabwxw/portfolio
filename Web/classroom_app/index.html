@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=1.0, user-scalable=yes" />
+<title>Designing Your Classroom</title>
+<link rel="stylesheet" type="text/css"  href="js/jquery-ui-1.10.0.custom/css/custom-theme/jquery-ui-1.10.0.custom.css">
+<link rel="stylesheet" type="text/css" href="js/spectrum/spectrum.css">
+<link rel="stylesheet" type="text/css" href="css/classroom.css">
+</head>
+<body>
+<div id="wrapper">
+  <div id="nav_container">
+    <ul class="topnav">
+      <li class="left" id="maplist"><a href="#" id="map">Map Settings&nbsp;<span class="arrow">&#x25BC;</span></a>
+        <ul id="map_sublist">
+          <li><a href="#" id="dimensions">Dimensions</a></li>
+          <li><a href="#" id="colors">Colors</a></li>
+          <li><a href="#" id="togglegrid">Show Grid</a></li>
+          <li><a href="#" id="togglewalls">Hide Walls</a></li>
+        </ul>
+      </li>
+      <li class="left"><a href="#" id="clear">Clear All</a></li>
+      <li class="left"><a href="#" id="capture">Capture Image</a></li>
+      <li class="right"><a href="#" id="help">Help</a></li>
+    </ul>
+  </div>
+  <div id="top_info">
+    <h1 id="header">Loading...</h1>
+    <div id="no_capture">Take a screenshot with a tool from outside the app. <a href="#">Resume Designing</a></div>
+    <div id="inst_rel">
+      <div id="instructions">Try dragging some objects from the palette to the map.</div>
+    </div>
+  </div>
+  <!-- the map, powered by KineticJS, goes in here.-->
+  <div id="container"> </div>
+ <canvas id="myCanvas" height="700px" width="850px"></canvas>
+ <div id="footer"><div id="bubble">This <em>Designing Your Classroom</em> application was developed by EdTech Leaders Online (<a href="http://edtechleaders.org" target="_blank">http://edtechleaders.org</a>) at Education Development Center.</div></div>
+  <div id="dialogs"> 
+    <!-- input box for placing text-->
+    <div id="input_box" title="Enter your text here.">
+      <fieldset id="properties" class="left_field">
+        Type here...
+        <textarea name="object_text"  rows="4" cols="40" id="enter_text" ></textarea>
+        <br>
+        
+        <!-- option for adding a background for the text-->
+        <input type="checkbox" name="background" value = "yes" id ="bg">
+        Background<br>
+        
+        <!-- bg color picker appears if background is selected-->
+        <div id="bgc">
+          <input type='text' id="color5" class="colorpicker"/>
+          <span id="textbgcolor" class="label">Background Color</span></div>
+        
+        <!-- font color picker-->
+        <input type='text' id="color6" class="colorpicker"/>
+        <span id="fontcolor" class="label">Font Color</span>
+      </fieldset>
+      
+      <!-- presets-->
+      <fieldset id="presets" class="right_field">
+        ...or select from these presets.<br>
+        <form action="GET" id="presets_form">
+          <input type="radio" class="pre" name="preset" value="Reading Station" id="read">
+          <span class="radiolabel">Reading Station</span><br>
+          <input type="radio" class="pre" name="preset" value="Teacher Led Station" id="teacherled">
+          <span class="radiolabel">Teacher Led Station</span><br>
+          <input type="radio" class="pre" name="preset" value="Technology Station" id="tech">
+          <span class="radiolabel">Technology Station</span><br>
+          <input type="radio" class="pre" name="preset" value="Independent Work " id="indep">
+          <span class="radiolabel">Independent Work</span><br>
+          <input type="radio" class="pre" name="preset" value="Hands-on Station " id="handson">
+          <span id="radiolabel">Hands-on Station</span><br>
+        </form>
+      </fieldset>
+    </div>
+    <!-- draggable panel lets you select the colors for floor & walls-->
+    <div id="color_box" title="room colors">
+      <input type='text' id="color4" class="colorpicker"/>
+      <span class="label">Floor</span><br>
+      <input type='text' id="color0" class="colorpicker"/>
+      <span class="label">Top Wall</span><br>
+      <input type='text' id="color1" class="colorpicker"/>
+      <span class="label">Right Wall</span><br>
+      <input type='text' id="color2" class="colorpicker"/>
+      <span class="label">Bottom Wall</span><br>
+      <input type='text' id="color3" class="colorpicker"/>
+      <span class="label">Left Wall</span><br>
+    </div>
+    
+    <!-- shapes dialog -->
+    <div id="shape_box" title="Create a Shape">
+      <div class="left_field" id="set_shape">
+        <fieldset id="shape_type" class="left_field">
+          <input type="radio" class="shape_type" name="shape" value="rPolygon" id="rpolygon" checked>
+          <span class="radiolabel">Regular Polygon</span><br>
+          <input type="radio" class="shape_type" name="shape" value="iPolygon" id="ipolygon">
+          <span class="radiolabel">Irregular Polygon</span><br>
+          <input type="radio" class="shape_type" name="shape" value="Rectangle" id="rect">
+          <span class="radiolabel">Rectangle</span><br>
+          <input type="radio" class="shape_type" name="shape" value="Circle" id="circle">
+          <span class="radiolabel">Circle</span><br>
+          <!--   <input type="radio" class="shape_type" name="shape" value="Ellipse" id="ellipse">
+          <span class="radiolabel">Ellipse</span><br>-->
+        </fieldset>
+        
+        <!-- shape fill color picker-->
+        <fieldset id="shape_colors" class="left_field">
+          <input type="checkbox" name="background" value = "yes" id ="shape_fill" checked>
+          <input type='text' id="color7" class="colorpicker"/>
+          <span id="shapebgcolor" class="label">Fill Color</span><br/>
+          <input type="checkbox" name="background" value = "yes" id ="shape_stroke" checked>
+          <!-- shape stroke color picker-->
+          <input type='text' id="color8" class="colorpicker"/>
+          <span id="strokecolor" class="label">Stroke Color</span>
+        </fieldset>
+      </div>
+      <fieldset id="shape_properties" class="right_field">
+        <div id="polygon">
+          <div class="spinner_row">Length of Side: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input id="side_length" name="value" value="20" class="ui-spinner sidelength"/>
+          </div>
+          <div class="spinner_row">Number of Sides:&nbsp;&nbsp;
+            <input id="num_sides" name="value" value="3" class="ui-spinner numsides"/>
+          </div>
+        </div>
+        <div id="rectangle">
+          <div class="spinner_row">Width:&nbsp;&nbsp;
+            <input id="width" name="value" value="10" class="ui-spinner sidelength"/>
+          </div>
+          <div class="spinner_row">Height:&nbsp;
+            <input id="height" name="value" value="10" class="ui-spinner sidelength"/>
+          </div>
+        </div>
+        <div id="round">
+          <div class="spinner_row" id="rad1"><span id="rad1label">Horiz. Radius:&nbsp;</span>
+            <input name="value" value="10" class="ui-spinner sidelength" id="radius1"/>
+          </div>
+          <div class="spinner_row" id="rad2"><span id="rad2label">Vert. Radius:&nbsp;&nbsp;</span>
+            <input name="value" value="10" class="ui-spinner sidelength" id="radius2"/>
+          </div>
+        </div>
+      </fieldset>
+      <div id="shape_error"></div>
+    </div>
+    <!-- images dialog-->
+    <div id="image_box" title="Custom Image">
+      <fieldset id="enter_url">
+        <div id="url_prompt">Enter the URL of an image that exists online. </div>
+        <input id="my_url" type='text' name='url' value='enter url here'/>
+      </fieldset>
+      <div id="disclaimer"><strong>Note:</strong> Adding custom images will prevent classroom image capturing from within the app.  If you add a custom image, use a tool within your browser or computer to take a screenshot.</div>
+      <div id="image_feedback"></div>
+    </div>
+    
+    <!-- filesave dialog -->
+     <div id="save_box" title="Save Classroom Image">
+     
+      <div id="filename_prompt">Enter your filename below.  The extension 'png' will be added automatically.</div>
+      
+        <input id="my_filename" type='text' name='url' value='my-image'/>
+     
+      <div id="filename_feedback"></div>
+    </div>
+    
+    <!-- multiple items dialog--> 
+    
+    <!-- help box-->
+    <div id="help_box" title="Designing Your Classroom Help">
+      <p><strong>Tools</strong></p>
+      <div class="help_section">
+        <div class="button_box">
+          <div class="button_icon" id="eraser_button"></div>
+        </div>
+        <div class="helptext_icon">Use this button to enable the eraser.  To erase an object, simply click or tap the object. Note that any objects that the target object is over will be erased as well.</div>
+      </div>
+      <div class="help_section">
+        <div class="button_box">
+          <div class="button_icon" id="text_button"></div>
+        </div>
+        <div class="helptext_icon">Use this button to place text or text boxes on your map. After you press the button, use the dialog to type in your text or use radio buttons to select preset text to use or modify.  You can also toggle the background, and set the font and background colors.  Upon clicking submit, the text object will appear on the map and can be dragged to a chosen location.  Note that text objects can be deleted like other objects.</div>
+      </div>
+      <div class="help_section">
+        <div class="button_box">
+          <div class="button_icon" id="rotate_button"></div>
+        </div>
+        <div class="helptext_icon">Use this button to enable rotation of objects. Tapping or clicking a classroom object in rotate mode will rotate it 45 degrees clockwise. Custom images, rectangles, and other polygons can also be rotated via green anchors at the corners, which show up in rotate mode.</div>
+        <div class="help_section">
+          <div class="button_box">
+            <div class="button_icon" id="image_button"></div>
+          </div>
+          <div class="helptext_icon">Use this button to add images that already exist online.  Paste in a valid image URL and you will add an image that can be rotated and resized via anchors.  Images with width or height greater than 400px will be resized when they are loaded.</div>
+          <div class="help_section">
+            <div class="button_box">
+              <div class="button_icon" id="shape_button"></div>
+            </div>
+            <div class="helptext_icon">Use this function to add polygons, rectangles, and circles. </div>
+            <div class="help_section">
+              <div class="button_box">
+                <div class="button_icon" id="grid_button"></div>
+              </div>
+              <div class="helptext_icon">Use this button to resize objects.  Clicking on an object in resize mode will make it resizeable.  Swiping up on the map will enlarge the object, and swiping down will reduce its size. Circles, rectangles, other polygons, and custom images can be resized via grey circular anchors that show up in resize mode.</div>
+              <p><strong>Top Buttons</strong></p>
+              <div class="helptext">Within Map Settings, there are four aspects of the map you can modify.</div>
+                <div class="helptext"><strong>Dimensions: </strong> Use this button to change the width and height of your classroom map.</div>
+                <div class="helptext"><strong>Colors: </strong> Use this button to open a dialog that allows you to set the colors of the floor and of each wall.</div>
+             
+              <div class="helptext"><strong>Show/Hide Grid: </strong> Use this button to toggle the grid on and off. The grid can be used to align objects and to better visualize out how classroom space is divided.</div>
+              <div class="helptext"><strong>Show/Hide Walls: </strong> Use this button to toggle the walls on and off.</div>
+              <div class="helptext">You also have these two features at the top nav bar.</div>
+              <div class="helptext"><strong>Clear All: </strong> Use this button to erase all items from the map.</div>
+              <div class="helptext"><strong>Capture: </strong> Use this button to capture an image of your map. Before clicking the button, make sure pop-ups are enabled on your web browser. </div>
+              
+              <div class="helptext"> Once you have your image, right-click the image (you can also command-click on Macs / control-click on PC's) and select 'save' if you are on a computer.</div>
+              
+              <div class="helptext">If you are on an iPad, capture will still work, but you'll need an extra step.  After capturing, press the home button and on/off button simultaneously to take a screen capture that saves to your camera roll.</div>
+            </div>
+     
+          </div>
+          <!-- the "clear screen" alert box.-->
+          <div id="alert_box" title="Clear Screen">
+            <p>This will erase all your work.  Are you sure you want to proceed?</p>
+          </div>
+        </div>
+        <div id="dimensions_dialog" title="Classroom Dimensions in Pixels"> Width:&nbsp;
+          <input type="text" id="roomWidth" class="dim_input"/>
+          <br>
+          Height:
+          <input type="text" id="roomHeight" class="dim_input"/>
+          <br>
+          <span id="error"></span> <br>
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- browser detection --> 
+<script type="text/javascript" src="js/browser_detect.js"></script> 
+
+<!--jquery library--> 
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.js"></script> 
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script> 
+
+<!--launches additional scripts--> 
+<script type="text/javascript" src="js/scriptlauncher.js"></script>
+<script src="js/jquery.getimagedata.min.js"></script>
+</body>
+</html>

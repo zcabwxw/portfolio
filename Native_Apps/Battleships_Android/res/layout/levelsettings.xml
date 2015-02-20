@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/settings_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="30dp"
+        android:text="@string/Settings"
+        android:textSize="35sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/choose_dim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal"
+        android:paddingTop="30dp"
+        android:text="@string/Choose_Dimensions"
+        android:textSize="20sp" >
+    </TextView>
+
+    <RadioGroup
+        android:id="@+id/dimensions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp" >
+
+        <RadioButton
+            android:id="@+id/dim6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/six_by_six" />
+
+        <RadioButton
+            android:id="@+id/dim8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/eight_by_eight" />
+
+        <RadioButton
+            android:id="@+id/dim10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ten_by_ten" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/choose_lvl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="bottom|center"
+        android:paddingTop="30dp"
+        android:text="@string/Choose_Level"
+        android:textSize="20sp" >
+    </TextView>
+
+    <RadioGroup
+        android:id="@+id/lvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp" >
+
+        <RadioButton
+            android:id="@+id/lvl_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Level_A" />
+
+        <RadioButton
+            android:id="@+id/lvl_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Level_B" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/Start"
+        android:textSize="20sp" />
+
+</LinearLayout>

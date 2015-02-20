@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<sections>
+
+	<section id="0">
+		<title>Arriving in a Family's Home</title>
+        <topic id="0">
+            <topic_title id="0">Background</topic_title>
+            <content id="0">Healthy behaviors are one way to help children stay healthy so they can focus on learning. A family’s approach to healthy behaviors is influenced by their health beliefs and culture and by their access to health information in a language they can understand. </content>
+            <content id="1">As a home visitor, you have a unique opportunity to provide health information that you and your families can discuss together. You know the needs and goals of the families you visit and can share easy-to-understand information to help them learn more about healthy behaviors. If there are barriers that prevent parents and families from adding new practices to their daily routines, you can help families think about how to include them in ways that are individualized to meet their needs. Even a few changes in daily routines can help the whole family by reducing illnesses that prevent adults from going to school or work. But, the first step is finding a good time to bring up these topics and knowing what to say.</content>
+        </topic>
+        
+        <topic id="1">
+            <topic_title id="0">Handwashing</topic_title id="0">
+            <subtopic id="0">
+                <subtopic_title>How this relates to germs</subtopic_title>
+                <ol id="0">
+                    <li id="0">Your hands pick up germs from all of the things they touch and then spread them from one place to another.</li>
+                    <li id="1">Germs can enter your body when you eat, touch your eyes, nose, mouth, or broken skin.</li>
+                    <li id="2">Handwashing with soap and water removes visible dirt and hidden germs.</li>
+                    <li id="3">handwashing reduced the number of diarrheal illnesses by 31 percent and respiratory illnesses by 21 percent.  </li>
+                </ol>
+            </subtopic>
+            <subtopic id="1">
+                <subtopic_title>When to wash your hands</subtopic_title>
+                <ol id="0">
+                    <li id="0">Before eating, feeding, or preparing food. This prevents germs from getting into the mouth from hands;</li>
+                    <li id="1">After they have touched saliva (after feeding or eating), mucous (wiping a nose, using a tissue), bodily fluids (toileting, diapering), food, or animals;</li>
+                    <li id="2">When visibly dirty, after touching garbage or after cleaning.</li>
+                </ol>
+            </subtopic>
+            <subtopic id="2">
+                <subtopic_title>Soap</subtopic_title>
+            </subtopic>
+            <subtopic id="3">
+                <subtopic_title>Hand Sanitizer Gels</subtopic_title>
+            </subtopic>
+            <subtopic id="4">
+                <subtopic_title>Conversation Starters</subtopic_title>
+            </subtopic>
+            <subtopic id="5">
+                <subtopic_title>Activities</subtopic_title>
+            </subtopic>
+            <subtopic id="6">
+                <subtopic_title>Links</subtopic_title>
+            </subtopic>
+            <subtopic id="7">
+                <subtopic_title>Videos</subtopic_title>
+            </subtopic>
+        </topic>
+	</section>
+
+	<section id="1">
+		<title>In the Kitchen &amp; Cooking</title>
+	</section>
+	
+	<section id="2">
+		<title>Eating &amp; Feeding</title>
+	</section>
+	
+	<section id="3">
+		<title>Diapering &amp; Toileting</title>
+	</section>
+	
+	<section id="4">
+		<title>Sneezing &amp; Coughing</title>
+	</section>
+	
+</sections>

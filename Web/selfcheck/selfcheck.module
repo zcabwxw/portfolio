@@ -1,0 +1,49 @@
+<?php
+
+function selfcheck_node_view($node) {
+	  global $base_url;
+	  $self_check_text = t('Check Your Understanding');
+	 // $basepath = 'http://crystalbridges.local:8888/sites/default/modules/custom/';
+	  //$basepath = 'https://crystalbridges.edc.org/sites/default/modules/custom/';
+	  $basepath = $base_url . '/sites/default/modules/custom/';
+	
+  if ($node->type == 'cb_self_check') {
+	 
+    if (!empty($node->field_self_check_app_number[LANGUAGE_NONE])) {
+    
+      drupal_add_library('system', 'ui');
+      drupal_add_library('system', 'ui.button');
+      drupal_add_library('system', 'ui.dialog');
+      drupal_add_library('system', 'ui.draggable');
+      drupal_add_library('system', 'ui.droppable');
+	  /*drupal_add_library('system', 'ui.widget');*/
+	  drupal_add_library('system', 'ui.position');
+	  drupal_add_library('system', 'ui.effect-fade');
+	
+      // Add quiz specific js / css here.
+      $self_check = theme('self_check', array('self_check_text' => $self_check_text, 'basepath' => $basepath));
+     
+      // Add the quiz to the node.
+      $node->content['self_check'] = array(
+        '#markup' => $self_check,
+        '#weight' => 99,
+      );
+
+	  drupal_add_js(array('selfcheck' => array('basepath' => $basepath)), 'setting');
+	 
+      // Add the app number as a js setting.
+      if (!empty($node->field_self_check_app_number[LANGUAGE_NONE][0]['value'])) {
+		  
+        drupal_add_js(array('self_check_app_num' => $node->field_self_check_app_number[LANGUAGE_NONE][0]['value']), 'setting');
+      }
+    }
+  }
+}
+
+function selfcheck_theme() {
+  $items['self_check'] = array(
+    'variables' => array('self_check_text', 'basepath',NULL),
+    'template' => 'templates/self_check_structure',
+  );
+  return $items;
+}

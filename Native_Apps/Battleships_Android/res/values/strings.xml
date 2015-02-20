@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">gridviewtest2</string>
+    <string name="action_settings">Settings</string>
+    <string name="Time">Time</string>
+    <string name="Clear">Clear</string>
+    <string name="Check">Check</string>
+    <string name="Settings">Settings</string>
+    <string name="Quit">Quit</string>
+    <string name="Game_Settings">Game Settings</string>
+    <string name="six_by_six">6 x 6</string>
+    <string name="eight_by_eight">8 x 8</string>
+    <string name="ten_by_ten">10 x 10</string>
+    <string name="Choose_Dimensions">Choose board dimensions.</string>
+    <string name="Choose_Level">Choose your level.</string>
+    <string name="Level_A">Level A</string>
+    <string name="Level_B">Level B</string>
+    <string name="Start">Start</string>
+    <string name="GameTitle">Battleships!!</string>
+    <string name="New_Game">New Game!</string>
+    <string name="Best_Time">Best Time: 0:00</string>
+    <string name="message">Game Running!</string>
+    <string name="Clear_Record">Clear Record</string>
+    <string name="Saved_Best_Time_Default">default time</string>
+    <string name="Icon_Name">Battleships</string>
+
+</resources>
